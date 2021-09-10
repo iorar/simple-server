@@ -11,6 +11,5 @@ RUN apt update && apt install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN pip install -r requirements.txt --no-cache-dir
-RUN python server.py
 
-CMD [ "python", "./src/main.py" ]
+CMD [ "python", "server.py" ]
